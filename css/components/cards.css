@@ -1,0 +1,136 @@
+.card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 3rem 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.card strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.simple-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: var(--content-max-width);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.simple-box:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.simple-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.simple-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.simple-box li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.simple-box li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.simple-box ol {
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+    display: inline-block;
+    list-style-position: inside;
+}
+
+.simple-box ol li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    padding-left: 0;
+    position: relative;
+}
+
+.simple-box ol li::before {
+    content: none;
+}
+
+.note {
+    background: rgba(0, 122, 255, 0.05);
+    border: 1px solid rgba(0, 122, 255, 0.2);
+    border-left: 3px solid var(--accent);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    margin: 2rem auto;
+    max-width: var(--content-max-width);
+    transition: var(--transition);
+}
+
+.note:hover {
+    border-color: rgba(0, 122, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.note-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.note h4 {
+    color: var(--accent);
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.note.warning {
+    background: rgba(255, 59, 48, 0.05);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-left: 3px solid var(--danger);
+}
+
+.note.warning h4 {
+    color: var(--danger);
+  }
