@@ -1,0 +1,94 @@
+.simple-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: rgba(0, 122, 255, 0.1);
+    border: 1px solid rgba(0, 122, 255, 0.2);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.simple-link:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--accent);
+}
+
+.nav-link-forward,
+.nav-link-backward {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    background: rgba(0, 122, 255, 0.1);
+    border: 1px solid rgba(0, 122, 255, 0.2);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.nav-link-forward:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.nav-link-backward:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--accent);
+    transform: translateX(-4px);
+}
+
+.entry-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    background: rgba(0, 122, 255, 0.1);
+    border: 1px solid rgba(0, 122, 255, 0.2);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.entry-link:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--accent);
+    transform: translateX(4px);
+}
+
+.threshold-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    background: rgba(0, 122, 255, 0.1);
+    border: 2px solid rgba(0, 122, 255, 0.2);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.threshold-link:hover {
+    background: rgba(0, 122, 255, 0.2);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
