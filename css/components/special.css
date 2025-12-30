@@ -1,0 +1,155 @@
+/* Danger Components */
+.danger-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--danger);
+}
+
+.danger-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.danger-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.danger-item strong {
+    color: var(--danger-light);
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.danger-item ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.75rem;
+}
+
+.danger-item li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.danger-item li::before {
+    content: "•";
+    color: var(--danger);
+    position: absolute;
+    left: 0.5rem;
+    font-weight: bold;
+}
+
+.danger-card {
+    background: rgba(255, 59, 48, 0.05);
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    border-left: 3px solid var(--danger);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    transition: var(--transition);
+}
+
+.danger-card:hover {
+    border-color: rgba(255, 59, 48, 0.3);
+    transform: translateY(-2px);
+}
+
+.danger-card .danger-header {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.danger-card h4 {
+    color: var(--danger);
+    margin: 0;
+}
+
+/* Mantra Box */
+.mantra-box {
+    padding: 2rem;
+}
+
+.mantra-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Special Effects */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 2px;
+    opacity: 0.1;
+    z-index: 9999;
+}
+
+.glow-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at center,
+        transparent 0%,
+        rgba(0, 122, 255, 0.02) 50%,
+        transparent 100%
+    );
+    z-index: 9998;
+}
+
+/* Reading Progress */
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 122, 255, 0.1);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.reading-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    transition: width 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accent Border */
+.accent-border-left {
+    border-left: 4px solid var(--accent) !important;
+}
+
+/* Quote Style */
+.quote-style {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+                           }
