@@ -10,6 +10,12 @@
     --accent-light: #80d4ff;
     --border: #424245;
     --border-light: #333336;
+
+    /* Forging-themed color accents */
+    --forge-primary: #ff9500;
+    --forge-secondary: #ff3b30;
+    --forge-gradient: linear-gradient(135deg, #ff9500, #ff3b30);
+    --forge-glow: 0 0 20px rgba(255, 59, 48, 0.3);
     
     /* Danger/Warning Colors */
     --danger: #ff3b30;
@@ -40,3 +46,4 @@
     --container-max-width: 1200px;
     --content-max-width: 800px;
 }
+
