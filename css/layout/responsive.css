@@ -1,1 +1,384 @@
 
+@media (max-width: 1024px) {
+    .sidenav {
+        transform: translateX(-100%);
+        width: 280px;
+        box-shadow: var(--shadow-md);
+    }
+
+    .sidenav.active {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    .sidenav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 4rem 1.5rem 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .card,
+    .simple-box {
+        padding: 2rem 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .card p,
+    .simple-box p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin: 2.5rem 0 1.5rem;
+    }
+
+    .series-part {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .part-content h4 {
+        text-align: center;
+    }
+
+    .series-mantra {
+        text-align: center;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 0;
+    }
+
+    .content-section > div:last-child {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .content-section > div:last-child span {
+        display: none;
+    }
+
+    .simple-link,
+    .nav-link-forward,
+    .nav-link-backward {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidenav-toggle {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .comparison {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .characteristics,
+    .insights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .step-number {
+        align-self: flex-start;
+    }
+    
+    .distinction-table {
+        font-size: 0.85rem;
+        border: none;
+    }
+    
+    .distinction-table table {
+        min-width: 100%;
+    }
+    
+    .distinction-table th,
+    .distinction-table td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .distinction-table td:first-child,
+    .distinction-table th:first-child {
+        padding-left: 0.75rem;
+    }
+    
+    .distinction-table td:last-child,
+    .distinction-table th:last-child {
+        padding-right: 0.75rem;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .navigation .nav-link-forward,
+    .navigation .nav-link-backward {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .threshold {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    
+    .threshold-text {
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 1rem;
+    }
+    
+    .threshold-divider {
+        display: none;
+    }
+    
+    .threshold-word {
+        padding: 0.5rem 0;
+    }
+    
+    .threshold-line {
+        width: 80%;
+    }
+    
+    .philosophy-points {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .philosophy-point {
+        padding: 1.5rem;
+    }
+    
+    .entry-point {
+        padding: 1.5rem;
+    }
+    
+    .entry-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .entry-point h4 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .invitation {
+        padding: 1.5rem;
+    }
+    
+    .threshold-link {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .installation-path {
+        margin: 2rem auto;
+        padding: 0;
+    }
+    
+    .installation-path::before {
+        left: 28px;
+    }
+    
+    .path-step {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .path-step .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .path-step .step-content {
+        padding: 1.25rem;
+    }
+    
+    .path-step h4 {
+        font-size: 1.1rem;
+    }
+    
+    .path-step p {
+        font-size: 0.9rem;
+    }
+    
+    .path-connector {
+        height: 30px;
+        margin: 0.5rem 0 1rem 0;
+    }
+    
+    .path-connector::after {
+        font-size: 1.25rem;
+        padding: 0 1rem;
+    }
+    
+    /* Forge enhancements mobile */
+    .forge-step {
+        padding-left: 2.5rem;
+    }
+    
+    .forge-step::before {
+        width: 16px;
+        height: 16px;
+        top: 0.3rem;
+    }
+    
+    .forge-step::after {
+        left: 8px;
+        top: 26px;
+    }
+    
+    .forge-button {
+        animation: hammerPulse 3s infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .card,
+    .simple-box {
+        padding: 1.5rem 1rem;
+    }
+
+    .series-part {
+        padding: 1.25rem;
+    }
+
+    .threshold-text {
+        font-size: 0.9rem;
+    }
+    
+    .philosophy-point {
+        padding: 1.25rem;
+    }
+    
+    .entry-point {
+        padding: 1.25rem;
+    }
+    
+    .invitation {
+        padding: 1.25rem 1rem;
+    }
+    
+    .invitation h3 {
+        font-size: 1.3rem;
+    }
+    
+    .threshold-link,
+    .nav-link-forward,
+    .nav-link-backward {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .distinction-table {
+        font-size: 0.8rem;
+    }
+    
+    .distinction-table th,
+    .distinction-table td {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .distinction-table td:first-child,
+    .distinction-table th:first-child {
+        padding-left: 0.5rem;
+    }
+    
+    .distinction-table td:last-child,
+    .distinction-table th:last-child {
+        padding-right: 0.5rem;
+    }
+    
+    .step-number,
+    .pattern-number,
+    .stage-icon {
+        font-size: 0.75rem;
+        min-width: 35px;
+        height: 35px;
+    }
+    
+    .code-content {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+
+    .installation-path::before {
+        display: none;
+    }
+    
+    .path-step {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .path-step .step-number {
+        margin-bottom: 0.5rem;
+    }
+    
+    .path-step .step-content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .path-header {
+        padding: 1rem;
+    }
+    
+    .path-header h4 {
+        font-size: 1rem;
+    }
+    
+    .path-header p {
+        font-size: 0.85rem;
+    }
+    
+    .path-connector::after {
+        font-size: 1.1rem;
+    }
+      }
