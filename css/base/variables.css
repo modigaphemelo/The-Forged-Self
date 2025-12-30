@@ -1,0 +1,42 @@
+:root {
+    /* Color System */
+    --bg-primary: #000000;
+    --bg-secondary: #1d1d1f;
+    --bg-tertiary: #2d2d2f;
+    --text-primary: #f5f5f7;
+    --text-secondary: #86868b;
+    --text-tertiary: #a1a1a6;
+    --accent: #00a8ff;
+    --accent-light: #80d4ff;
+    --border: #424245;
+    --border-light: #333336;
+    
+    /* Danger/Warning Colors */
+    --danger: #ff3b30;
+    --danger-light: #ff9494;
+    --warning: #ffcc00;
+    
+    /* Typography */
+    --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: "SF Mono", "Menlo", "Monaco", "Courier New", monospace;
+    
+    /* Spacing & Measurements */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 20px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 30px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+    
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease;
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Layout */
+    --sidenav-width: 220px;
+    --container-max-width: 1200px;
+    --content-max-width: 800px;
+}
