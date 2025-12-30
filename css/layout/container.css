@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: var(--sidenav-width);
+    padding: 3rem 2rem;
+    max-width: var(--container-max-width);
+    width: calc(100% - var(--sidenav-width));
+}
+
+.content-section {
+    margin-bottom: 3rem;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.simple-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 2.5rem auto;
+    max-width: var(--content-max-width);
+}
