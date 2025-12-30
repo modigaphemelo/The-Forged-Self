@@ -1,0 +1,157 @@
+.tier-section {
+    margin-top: 3rem;
+}
+
+.tier-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.tier-number {
+    width: 36px;
+    height: 36px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.tier-header h4 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Entry Points */
+.entry-points h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.entry-point {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    position: relative;
+}
+
+.entry-point:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.entry-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.entry-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 122, 255, 0.1);
+    border-radius: var(--radius-sm);
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.entry-point h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    flex: 1;
+}
+
+.entry-content {
+    padding-left: 0.5rem;
+}
+
+.entry-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.entry-content strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Invitation */
+.invitation {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: var(--content-max-width);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.invitation:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.invitation h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.invitation-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.invitation-content strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.invitation-note {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.invitation-note p {
+    font-style: italic;
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.invitation-note em {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 600;
+  }
