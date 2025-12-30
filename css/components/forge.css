@@ -1,0 +1,197 @@
+/* ===== FORGED SELF ENHANCEMENTS ===== */
+
+/* Forging-themed text gradient */
+.forge-accent {
+    background: linear-gradient(135deg, var(--forge-primary), var(--forge-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Forge-themed buttons */
+.forge-button {
+    animation: hammerPulse 2s infinite;
+    background: linear-gradient(135deg, var(--forge-primary), var(--forge-secondary));
+    color: white;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.forge-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.forge-button:hover {
+    animation: none;
+    transform: scale(1.05);
+    box-shadow: var(--forge-glow);
+}
+
+.forge-button:hover::before {
+    left: 100%;
+}
+
+/* Stage icons with forging colors */
+.stage-icon {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.stage-1-icon { 
+    background: rgba(255, 149, 0, 0.1); 
+    color: var(--forge-primary);
+    border: 2px solid rgba(255, 149, 0, 0.3);
+}
+
+.stage-2-icon { 
+    background: rgba(255, 59, 48, 0.1); 
+    color: var(--forge-secondary);
+    border: 2px solid rgba(255, 59, 48, 0.3);
+}
+
+.stage-3-icon { 
+    background: rgba(0, 122, 255, 0.1); 
+    color: var(--accent);
+    border: 2px solid rgba(0, 122, 255, 0.3);
+}
+
+.stage-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated fire background for emergency sections */
+.fire-bg {
+    background: linear-gradient(45deg, 
+        rgba(255, 59, 48, 0.05) 0%, 
+        rgba(255, 149, 0, 0.05) 25%, 
+        rgba(255, 59, 48, 0.05) 50%, 
+        rgba(255, 149, 0, 0.05) 75%, 
+        rgba(255, 59, 48, 0.05) 100%);
+    background-size: 400% 400%;
+    animation: fireShift 15s ease infinite;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    position: relative;
+}
+
+.fire-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--forge-secondary), transparent);
+}
+
+/* Forge card enhancements */
+.forge-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.forge-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--forge-gradient);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.forge-card:hover {
+    border-color: var(--forge-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.forge-card:hover::before {
+    opacity: 1;
+}
+
+/* Forge process steps */
+.forge-step {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.forge-step::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 20px;
+    height: 20px;
+    background: var(--forge-gradient);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 149, 0, 0.3);
+}
+
+.forge-step::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    bottom: -2rem;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--forge-primary), transparent);
+}
+
+.forge-step:last-child::after {
+    display: none;
+}
+
+/* Heat gauge indicator */
+.heat-gauge {
+    height: 4px;
+    background: linear-gradient(90deg, 
+        var(--forge-primary) 0%, 
+        var(--forge-secondary) 100%);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heat-gauge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(255, 255, 255, 0.3) 50%, 
+        transparent 100%);
+    animation: gaugeShimmer 2s infinite;
+}
+
+@keyframes gaugeShimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
