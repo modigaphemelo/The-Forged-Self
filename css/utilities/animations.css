@@ -61,3 +61,15 @@
         }
     }
 }
+
+/* Heat/hammer animation for buttons */
+@keyframes hammerPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Animated fire background */
+@keyframes fireShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
