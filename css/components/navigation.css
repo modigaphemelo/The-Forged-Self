@@ -1,0 +1,91 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.progress {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Threshold Components */
+.threshold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.threshold-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+.threshold-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0 1rem;
+}
+
+.threshold-word {
+    transition: var(--transition);
+}
+
+.threshold-word:hover {
+    color: var(--accent);
+}
+
+.threshold-divider {
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.threshold-instruction {
+    text-align: center;
+    max-width: var(--content-max-width);
+    margin: 2rem auto;
+}
+
+.threshold-instruction p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.threshold-instruction strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.threshold-navigation {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.threshold-path {
+    display: inline-block;
+    position: relative;
+}
