@@ -4,7 +4,6 @@
     border-radius: var(--radius-md);
     padding: 3rem 2.5rem;
     margin-bottom: 2rem;
-    text-align: center;
     transition: var(--transition);
 }
 
@@ -18,11 +17,58 @@
     line-height: 1.6;
     color: var(--text-primary);
     margin: 0;
+    text-align: center;
 }
 
 .card strong {
     color: var(--accent);
     font-weight: 600;
+}
+
+/* Lists in cards - centered with proper alignment */
+.card ul,
+.card ol {
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.card ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.card ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.card li {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+.card ul li::before {
+    content: "•";
+    color: var(--accent);
+    position: absolute;
+    left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card ol {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+}
+
+.card ol li {
+    padding-left: 0.5rem;
 }
 
 .simple-box {
@@ -32,7 +78,6 @@
     padding: 2rem;
     margin: 2rem auto;
     max-width: var(--content-max-width);
-    text-align: center;
     transition: var(--transition);
 }
 
@@ -48,12 +93,22 @@
     margin: 0 0 1rem 0;
 }
 
-.simple-box ul {
-    list-style: none;
+.simple-box ul,
+.simple-box ol {
+    text-align: center;
     padding: 0;
     margin: 1rem 0 0 0;
-    text-align: left;
+}
+
+.simple-box ul {
+    list-style: none;
     display: inline-block;
+    text-align: left;
+}
+
+.simple-box ol {
+    display: inline-block;
+    text-align: left;
 }
 
 .simple-box li {
@@ -63,9 +118,10 @@
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
     position: relative;
+    text-align: left;
 }
 
-.simple-box li::before {
+.simple-box ul li::before {
     content: "•";
     color: var(--accent);
     position: absolute;
@@ -74,25 +130,12 @@
 }
 
 .simple-box ol {
-    padding: 0;
-    margin: 1rem 0;
-    text-align: left;
-    display: inline-block;
-    list-style-position: inside;
+    list-style-position: outside;
+    padding-left: 1.5rem;
 }
 
 .simple-box ol li {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-    text-align: left;
-    padding-left: 0;
-    position: relative;
-}
-
-.simple-box ol li::before {
-    content: none;
+    padding-left: 0.5rem;
 }
 
 .note {
@@ -133,4 +176,4 @@
 
 .note.warning h4 {
     color: var(--danger);
-  }
+    }
