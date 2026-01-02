@@ -11,9 +11,6 @@
 </head>
 <body>
 
-    <div class="scanlines"></div>
-    <div class="glow-effect"></div>
-
     <div class="reading-progress">
         <div class="reading-progress-fill"></div>
     </div>
@@ -225,8 +222,8 @@
                     <h3 class="forge-accent">The Tempering Installation Protocol</h3>
                     <p>How to install tempering at the structural level.</p>
 
-                    <div class="installation-path">
-                        <div class="path-step">
+                    <div class="process">
+                        <div class="process-step">
                             <div class="step-number" style="background: var(--forge-primary);">1</div>
                             <div class="step-content">
                                 <h4 class="forge-accent">The Daily Minimum Strike</h4>
@@ -246,9 +243,7 @@
                             </div>
                         </div>
                         
-                        <div class="path-connector"></div>
-                        
-                        <div class="path-step">
+                        <div class="process-step">
                             <div class="step-number" style="background: var(--forge-primary);">2</div>
                             <div class="step-content">
                                 <h4 class="forge-accent">The 1% Alignment Loop</h4>
@@ -268,9 +263,7 @@
                             </div>
                         </div>
                         
-                        <div class="path-connector"></div>
-                        
-                        <div class="path-step">
+                        <div class="process-step">
                             <div class="step-number" style="background: var(--forge-primary);">3</div>
                             <div class="step-content">
                                 <h4 class="forge-accent">The Strength Asset Protocol</h4>
@@ -278,10 +271,10 @@
                                 
                                 <div class="simple-box" style="margin: 1.5rem 0; background: var(--bg-tertiary);">
                                     <p><strong>Strength vs. Consumption:</strong></p>
-                                    <div class="comparison" style="grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;">
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0;">
                                         <div>
-                                            <h5 style="color: var(--danger); margin-bottom: 0.5rem;">Consumable Work</h5>
-                                            <ul style="font-size: 0.9rem;">
+                                            <h5 style="color: var(--danger); margin-bottom: 0.5rem; font-size: 0.95rem;">Consumable Work</h5>
+                                            <ul style="font-size: 0.9rem; padding-left: 1.2rem;">
                                                 <li>Daily tasks & emails</li>
                                                 <li>Surface polishing</li>
                                                 <li>Busy striking</li>
@@ -289,8 +282,8 @@
                                             </ul>
                                         </div>
                                         <div>
-                                            <h5 style="color: var(--forge-primary); margin-bottom: 0.5rem;">Strength Work</h5>
-                                            <ul style="font-size: 0.9rem;">
+                                            <h5 style="color: var(--forge-primary); margin-bottom: 0.5rem; font-size: 0.95rem;">Strength Work</h5>
+                                            <ul style="font-size: 0.9rem; padding-left: 1.2rem;">
                                                 <li>Grain alignment</li>
                                                 <li>Crystal networking</li>
                                                 <li>Structural integrity</li>
@@ -400,22 +393,22 @@
                         <h4 class="forge-accent">The Forge Health Monitor</h4>
                         <p>Track these metrics weekly in your forge log:</p>
                         
-                        <div class="metrics-grid">
-                            <div class="metric-item">
-                                <div class="metric-value">Consistency Score</div>
-                                <div class="metric-label">Days struck / days possible</div>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-sm);">
+                                <div style="font-weight: 600; color: var(--forge-primary); margin-bottom: 0.5rem;">Consistency Score</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);">Days struck / days possible</div>
                             </div>
-                            <div class="metric-item">
-                                <div class="metric-value">Alignment Rate</div>
-                                <div class="metric-label">Are you getting 1% better grain?</div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-sm);">
+                                <div style="font-weight: 600; color: var(--forge-primary); margin-bottom: 0.5rem;">Alignment Rate</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);">Are you getting 1% better grain?</div>
                             </div>
-                            <div class="metric-item">
-                                <div class="metric-value">Strength Creation</div>
-                                <div class="metric-label">% of work that tempers vs consumes</div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-sm);">
+                                <div style="font-weight: 600; color: var(--forge-primary); margin-bottom: 0.5rem;">Strength Creation</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);">% of work that tempers vs consumes</div>
                             </div>
-                            <div class="metric-item">
-                                <div class="metric-value">Crystal Density</div>
-                                <div class="metric-label">How connected are your alignments?</div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: var(--radius-sm);">
+                                <div style="font-weight: 600; color: var(--forge-primary); margin-bottom: 0.5rem;">Crystal Density</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);">How connected are your alignments?</div>
                             </div>
                         </div>
                         
